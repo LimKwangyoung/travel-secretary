@@ -1,0 +1,122 @@
+.box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 350px;
+  min-height: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+  padding: 10% 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modalTitle {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.totalAmount {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: rgb(78, 160, 120);
+  height: 50px;
+}
+
+.allContent {
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.content {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  width: 20%;
+  /* border: 1px solid black; */
+}
+
+.brandName {
+  width: 60%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 */
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 표시 */
+  /* text-overflow: clip; */
+  /* border: 1px solid black; */
+  padding: 0 5%;
+}
+
+.payRecord {
+  width: 20%;
+  font-size: 0.7rem;
+  color: grey;
+  /* border: 1px solid black; */
+}
+
+.memberList {
+  margin-top: 20px;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+
+.member {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.memberName {
+  margin: 10px 50px 10px 0px;
+  width: 25%;
+  text-align: end;
+}
+
+/* 정산하기 */
+.adjustContainer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.adjustBtn {
+  width: 50%;
+  height: 70%;
+  background-color: #4b72e1;
+  border-radius: 30px;
+  color: white;
+  padding: 8px 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -50px;
+}

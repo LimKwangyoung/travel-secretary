@@ -1,0 +1,66 @@
+.trip {
+  margin: 30px auto 0px auto;
+  height: 200px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 5px 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+.content * {
+  font-size: 1rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  /* border: 1px solid black; */
+}
+
+.character {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.characterImg {
+ width: 100px;
+ margin-right: 30px;
+}
+
+.characterInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.myCharacter {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.myChip {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}

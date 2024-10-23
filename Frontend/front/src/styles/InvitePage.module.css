@@ -1,0 +1,107 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 90vh;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px auto;
+  padding: 0;
+  align-items: center;
+  justify-content: end;
+  font-size: 1.5rem;
+  /* border: 1px solid black; */
+}
+
+.content {
+  margin: 30px auto;
+}
+
+/* 질문 위치 */
+.question {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.accountListContainer {
+  max-height: 300px; /* 스크롤을 위한 최대 높이 설정 */
+  overflow-y: auto;  /* 세로 스크롤 활성화 */
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+
+.accountList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accountItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.accountItem.selected {
+  background-color: #e9f5ff; /* 선택된 경우 배경색 변경 */
+}
+
+.budget input {
+  width: 100%;
+  padding: 10px 12px; /* 패딩을 조금 넓게 설정 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+
+
+/* 초대 수락하기 */
+.acceptContainer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.acceptBtn {
+  width: 50%;
+  height: 70%;
+  background-color: #4b72e1;
+  border-radius: 30px;
+  color: white;
+  padding: 8px 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -50px;
+}

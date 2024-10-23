@@ -1,0 +1,162 @@
+.container {
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 5px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #aaa;
+  border-bottom: 2px solid transparent;
+}
+
+.active {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.payContainer {
+  height: calc(100% - 130px);
+  overflow-y: auto;
+  /* border: 1px solid blue; */
+}
+
+/* .paymentItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+} */
+
+.dateGroup {
+  /* border: 1px solid black; */
+  padding: 3% 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.dateHeader {
+  padding-left: 3%;
+  background-color: #ddd;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.payContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  /* border: 1px solid blue; */
+}
+
+div.pay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.categoryArea {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid green; */
+}
+
+.costArea {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  padding-left: 5%;
+  /* border: 1px solid red; */
+}
+
+.amount {
+  font-size: 1.1rem;
+  /* color: rgb(214, 72, 72); */
+  color: rgb(78, 160, 120);
+}
+
+.amount.completed {
+  color: gray; /* 정산 완료일 때 회색 */
+}
+
+.brandName {
+  font-size: 0.8rem;
+  font-weight: 300;
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 /
+  overflow: hidden; / 넘치는 텍스트를 숨김 /
+  text-overflow: ellipsis; / 넘치는 텍스트에 '...' 표시 /
+  / text-overflow: clip; /
+  max-width: 97%; / 요소의 최대 너비를 지정 */
+}
+
+.checkArea {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* 정산하기 */
+.adjustContainer {
+  margin-top: 10px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adjustBtn {
+  width: 80%;
+  height: 70%;
+  background-color: #4b72e1;
+  border-radius: 30px;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+.payAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgba(75,114,225, 0.8); 
+  padding: 3%;
+  background-color: #ddd;
+  border-radius: 15px;
+  gap: 10px;
+  margin-top: 10px;
+  /* border: 1px solid black;  */
+}

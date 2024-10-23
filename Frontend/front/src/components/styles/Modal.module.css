@@ -1,0 +1,30 @@
+.box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 90%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+  padding: 10% 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100000;
+}
+
+.modalTitle {
+  font-size: 26px;
+  font-weight: bold;
+}

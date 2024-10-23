@@ -1,0 +1,66 @@
+.box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+  padding: 10% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 100%;
+  margin: -5px auto 10px auto;
+}
+
+.content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  overflow-y: auto;
+  /* border: 1px solid black; */
+}
+
+.mbtiRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* 이미지와 텍스트가 수직으로 가운데 정렬 */
+  margin-bottom: 30px; /* 각 MBTI 항목 간의 여백 */
+}
+
+.mbtiImage{
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+}
+
+.mbtiText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 텍스트가 이미지와 수평으로 맞춰지도록 */
+  margin-left: 20px;
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
+.idx {
+  background-color: #d8e2fc;
+  color: #4b72e1;
+  padding: 3px 6px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.explanation {
+  font-size: 0.75rem !important;
+  margin-top: 10px !important;
+  font-family: "Spoqa Han Sans Neo" !important;
+}

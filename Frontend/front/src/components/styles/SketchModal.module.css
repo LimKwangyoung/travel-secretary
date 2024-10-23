@@ -1,0 +1,63 @@
+.box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* width: 90%;
+  height: 50%; */
+
+  width: 340px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+  padding: 4% 3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modalTitle {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* 파일 업로드 */
+.fileUpload {
+  height:90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 8% auto;
+  padding-left: 20px;
+}
+
+.fileName {
+  white-space: nowrap; /* 한 줄로 표시 */
+  overflow: hidden; /* 넘치는 부분 숨김 */
+  text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+  max-width: 200px; /* 원하는 최대 너비 설정 */
+  display: inline-block; /* 한 줄로 표시되도록 보장 */
+}
+
+.saveBtn {
+  width: 70%;
+  height: 60px;
+  background-color: #1976d2;
+  border-radius: 50px !important;
+  font-family: "Spoqa Han Sans Neo";
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}

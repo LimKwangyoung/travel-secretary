@@ -1,0 +1,66 @@
+.box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 90%;
+  min-height: 550px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+  padding: 10% 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  margin: 10px auto;
+  /* border: 1px solid black; */
+}
+
+.content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Spoqa Han Sans Neo" !important;
+}
+
+.customFont {
+  font-family: "Spoqa Han Sans Neo", sans-serif !important;
+}
+
+/* 추가하기 */
+.adjustContainer {
+  position: absolute !important;
+  bottom: 10px !important; /* 모달의 하단에서 10px 띄움 */
+  left: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 10px 0 !important;
+}
+
+
+.adjustBtn {
+  width: 50% !important;
+  height: 70% !important;
+  background-color: #4b72e1 !important;
+  border-radius: 30px !important;
+  color: white !important;
+  padding: 8px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  font-family: "Spoqa Han Sans Neo" !important;
+}

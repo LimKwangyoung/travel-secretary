@@ -1,0 +1,186 @@
+.box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 90%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+  padding: 10% 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modalTitle {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* 여행 정보 */
+.infoBox {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 90%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+  padding: 13% 4% 8% 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.date {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1% auto;
+  padding: 3%;
+  padding-bottom: 7%;
+  border-bottom: 1px dashed grey;
+  /* border: 1px solid black; */
+}
+
+.country {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5% auto;
+  padding: 3%;
+  border-bottom: 1px dashed grey;
+  /* border: 1px solid black; */
+}
+
+.budget {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1% auto 0 auto;
+  padding: 3% 3% 0 3%;
+  /* border: 1px solid black; */
+}
+
+.infoTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.infoDetail {
+  width: 80%;
+  font-size: 18px;
+  margin: 5% auto 2% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* border: 1px solid blue; */
+}
+
+.fullDate {
+  font-weight: 400 !important;
+  font-size: 16px;
+}
+
+.infoMap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  margin: 0 0 7% 0;
+}
+
+.countryName {
+  min-width: 110px;
+  font-weight: 500;
+  /* border: 1px solid black; */
+}
+
+.time {
+  font-size: 17px;
+}
+
+.timeCompare {
+  font-size: 12px;
+}
+
+.member {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  margin: 2% 0;
+}
+
+.memberName {
+  min-width: 110px;
+  font-weight: 500;
+}
+
+.memberBalance {
+  font-size: 15px;
+}
+
+.infoBudget {
+  height: 35px;
+  /* border: 1px solid black; */
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 저장하기 */
+.editBudget {
+  margin-bottom: 50px;
+}
+.saveContainer {
+  position: absolute !important;
+  bottom: 10px !important; /* 모달의 하단에서 10px 띄움 */
+  left: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 10px 0 !important;
+}
+
+.saveBtn {
+  width: 50% !important;
+  height: 70% !important;
+  background-color: #4b72e1 !important;
+  border-radius: 30px !important;
+  color: white !important;
+  padding: 8px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  font-family: "Spoqa Han Sans Neo" !important;
+}

@@ -1,0 +1,99 @@
+/* 구획 나누기 */
+.trip {
+  margin: 30px auto;
+  /* border: 2px solid blue; */
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 5px 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-size: medium;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.content * {
+  font-size: 1rem;
+}
+
+/* 별칭 */
+.tripName {
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: -75px;
+  margin-bottom: 40px;
+  /* border: 1px solid black; */
+}
+
+/* 날짜 */
+.date {
+  margin-top: 0px;
+}
+
+.date > .content {
+  padding-left: 35px;
+}
+
+/* 멤버 */
+.member * {
+  margin: 0px auto;
+}
+
+.member > .title {
+  display: flex;
+}
+
+.backgroundMember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  background-color: #ffffff;
+}
+
+.memberList {
+  display: flex;
+  align-items: center;
+  justify-content: flex;
+  width: 100px; /* 각 사진의 너비 */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start; /* Snap alignment */
+  flex-shrink: 0; /* Prevent shrinking */
+  /* border: 1px solid black; */
+  padding-bottom: 55px;
+  padding-left: 10px;
+}
+
+.memberImage {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.memberName {
+  font-weight: 500;
+}

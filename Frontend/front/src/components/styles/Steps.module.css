@@ -1,0 +1,251 @@
+/* main-container 스타일 */
+.mainContainer {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  margin: 0px auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
+  margin: 0px 10px;
+  /* border: 2px solid blue; */
+}
+
+.first, .third, .fifth {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.second, .fourth {
+  padding-bottom: 120px;
+}
+
+.sixth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 질문 위치 */
+.question {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  width: 90%;
+}
+
+.subtitle {
+  font-size: small;
+  padding-left: 2px;
+}
+
+/* 추가 버튼 */
+/* button.btnAdd {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+  width: 80px;
+}
+
+button.btnAdd:hover {
+  background-color: #0056b3;
+} */
+
+.first input, .third input {
+  width: 75%;
+  padding: 10px 12px; /* 패딩을 조금 넓게 설정 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+/* chip-container */
+.chipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* 칩 사이 간격 */
+  margin: 12px 17px;
+  width: 91%; /* 가로로 전체를 채움 */
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* border: 2px solid blue; */
+}
+
+/* 날짜 입력 필드 */
+.second input {
+  width: 42%;
+  margin: 10px;
+  padding: 12px; /* 패딩을 조금 넓게 설정 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.memberItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.inviteButton {
+  padding: 10px 15px;
+  background-color: #FEE500;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 17px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.inviteButton img {
+  height: 90%;
+  padding-right: 5px;
+}
+
+.dropdownContainer {
+  position: relative;
+}
+
+.friendListContainer {
+  max-height: 170px; /* 스크롤을 위한 최대 높이 설정 */
+  overflow-y: auto;  /* 세로 스크롤 활성화 */
+  border: 1px solid #ccc;
+  width: 90%;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.friendList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friendItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.friendItem.selected {
+  background-color: #e9f5ff; /* 선택된 경우 배경색 변경 */
+}
+
+.friendImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.memberItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.accountListContainer {
+  max-height: 300px; /* 스크롤을 위한 최대 높이 설정 */
+  overflow-y: auto;  /* 세로 스크롤 활성화 */
+  border: 1px solid #ccc;
+  width: 90%;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.accountList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accountItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.accountItem.selected {
+  background-color: #e9f5ff; /* 선택된 경우 배경색 변경 */
+}
+
+.loadingImg {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  /* margin-bottom: 20px; */
+}
+
+.successImg {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.loadingMsg {
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 20px; /* loading 상태일 때의 margin 값 */
+}
+
+.successMsg {
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 60px; /* success 상태일 때의 margin 값 */
+}
+
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
