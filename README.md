@@ -1,80 +1,51 @@
 # 요뜨
+<img src="./images/cover.jpg" alt="cover.jpg" />
+<br><br>
 
-## 개발 환경
+여행을 위한 **스마트**한 정산 서비스 **요뜨**
 
-- **언어:** Python, JavaScript
-- **프레임워크:** Django, React.js
-- **IDE:** Visual Studio Code
-- **데이터베이스:** MySQL
-- **버전 관리:** Git
-- **빌드 및 배포 도구:** Docker, Jenkins
+### [UCC 링크](https://youtu.be/PiQEm1SlShk)
 
-## 빌드 및 실행 방법
+## 요뜨 소개
+<img src="./images/intro.jpg" alt="intro.jpg"/>
+<br><br>
 
-#### Django 실행 방법
+요뜨는 여행을 위한 간편 정산 및 송금 서비스입니다.
 
-1. `back` branch로 이동: `git switch back`
-2. 가상환경 생성: `python -m venv venv`
-3. 가상환경 활성화: `source venv/Scripts/activate`
-4. 라이브러리 설치: `pip install -r requirements`
-5. Django 서버 실행: `python manage.py runserver`
+## 주요 기능
+### OAuth 연동
+<div style="display: flex; gap: 10px;">
+    <img src="./images/oauth_1.jpg" alt="oauth_1.jpg" width="50%" />
+    <img src="./images/oauth_2.jpg" alt="oauth_2.jpg" width="50%" />
+</div>
+<br><br>
 
-#### React.js localhost 빌드 방법
+카카오 OAuth 연동을 통해 편하게 친구를 여행 일정에 초대할 수 있습니다. 또한 여행 초대 및 정산 메세지를 카카오톡에서 쉽게 확인할 수 있습니다.
 
-1. `develop-front` branch로 이동: `git switch develop-front`
-2. Frontend 폴더로 이동: `cd front/Frontend`
-3. 라이브러리 설치: `npm install`
-4. React.js 서버 실행: `npm run dev`
+### 간편 정산
+<div style="display: flex; gap: 10px;">
+    <img src="./images/adjust_1.jpg" alt="adjust_1.jpg" width="50%" />
+    <img src="./images/adjust_2.jpg" alt="adjust_2.jpg" width="50%" />
+</div>
+<br><br>
 
-## 프로젝트 흐름 설명
+미정산과 정산 완료한 내역을 확인할 수 있습니다. 또한 여행 일자 별로 소비한 내역들을 볼 수 있으며, 정산 요청이 가능한 내역은 체크 박스가 나타납니다. 해당 내역을 클릭하면, 여행 인원 별로 정산액을 세부적으로 조정할 수 있습니다.
 
-### 1. 시작 페이지(HomePage)
+### 여행 소비 내역 관리
+<div style="display: flex; gap: 10px;">
+    <img src="./images/gallery_1.jpg" alt="gallery_1.jpg" width="50%" />
+    <img src="./images/gallery_2.jpg" alt="gallery_2.jpg" width="50%" />
+</div>
+<br><br>
 
-![alt text](images/HomePage.png)
+여행 소비 내역은 AI 모델을 통해 자동으로 카테고리화 합니다. 이를 통해 여행 지출의 분석 포트폴리오를 확인할 수 있습니다. 또한 생성형 AI를 활용해 여행 사진을 캐릭터화하여 추억을 간직할 수 있습니다.
 
-- Kakao 소셜 로그인과 연동했습니다.
-
-### 2. 전체 여행 페이지(TripPage)
-
-
-
-- 사용자의 전체 여행을 보여주는 페이지입니다.
-- 상단의 여행은 현재 진행중인 여행, 그리고 미래에 갈 여행을 보여줍니다.
-- 하단의 여행은 완료된 여행들을 보여줍니다.
-- 특히, 하단의 여행 썸네일은 사용자가 업로드한 사진을 생성형 AI를 활용하여 스케치 형식의 이미지로 변환한 것입니다.
-
-### 3. 여행 생성 페이지(TripCreatePage)
-
-![alt text](images/TripCreatePage_1.png)
-![alt text](images/TripCreatePage_2.png)
-![alt text](images/TripCreatePage_3.png)
-
-- 이 페이지는 여행을 생성하는 페이지입니다.
-- 모든 내용이 조건을 충족한다면 다음 버튼 클릭 시 여행이 생성됩니다.
-- 상세 여행 페이지로 돌아가게 되고, 생성된 여행을 확인할 수 있습니다.
-
-### 4. 여행 상세 페이지(TripDetailPage)
-
-![alt text](images/TripDetailPage_1.png)
-![alt text](images/TripDetailPage_2.png)
-
-- 여행의 꽃, 결제 내역을 표기해주는 페이지입니다.
-- 상단의 날짜를 클릭하면 해당 날짜의 결제 내역을 보여주고, 좌측의 A를 클릭하면 모든 결제 내역을 표기해줍니다.
-- P를 클릭하면 여행 전 결제 내역이 표기되고, 결제 내역을 추가할 수 있습니다.
-  - 항공, 숙박과 같은 경우 여행 전에 미리 결제하는 경우가 많아 결제 내역 추가 기능을 제공합니다.
-- 예산은 초기, 잔여, 소비 예산을 보여줍니다. 예산 부분을 클릭하면 보여지는 정보가 달라지는 것을 볼 수 있습니다.
-- 하단 결제에서는 자신이 결제한 결제 내역에 대해서만 정산할 수 있도록 설정했고, 정산이 완료되면 회색으로 표기됩니다.
-
-### 5. 여행 종료 페이지(TripFinishView)
-
-![alt text](images/TripFinishPage.png)
-
-### 9. 완료된 여행 페이지(GalleryView)
-
-![alt text](images/GalleryPage_1.png)
-![alt text](images/GalleryPage_2.png)
-
-- 이미 다녀온 여행의 기록을 볼 수 있는 페이지입니다.
-- 여행의 날짜와 멤버, 소비 내역을 볼 수 있습니다.
-- 여행 소비 내역을 자동으로 카테고리화하여 분류하며, 이에 따라 소비 성향을 분석하여 사용자의 소BTI를 알려줍니다.
-- 여행 스케치 기능을 통해 사용자의 여행 사진를 입력하면, 생성형 AI가 사진을 스케치해줍니다.
+## 멤버 소개
+|제목|내용|내용|
+|-----|-----|-----|
+|팀장|임광영|FE|
+|팀원|박준영|FE|
+|팀원|오승진|INFRA|
+|팀원|이선재|FE|
+|팀원|정지환|BE|
+|팀원|정태완|BE, INFRA|
